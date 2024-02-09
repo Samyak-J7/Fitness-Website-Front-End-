@@ -60,6 +60,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-left:auto;
+    display:none;
 }
 .sidebar{
     position: fixed;
@@ -158,8 +159,8 @@ ul{
    #tabs,#signin{
     display: none;
    }
-   #menu{
-    display: block;
+   #menulogo{
+    display: flex;
    }
     nav{
         height: 8vh;
