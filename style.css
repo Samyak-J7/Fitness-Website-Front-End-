@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 nav{
     width: 100vw;
     height: 15vh;
@@ -44,9 +43,12 @@ nav{
     font-size: 0.8rem;
     font-weight: 900;
 }
-#tabs span:hover{
+#tabs div:hover{
     border-bottom: 0.2rem solid rgb(20, 138, 189);
-    background-color: aliceblue;
+    background-color: aliceblue;    
+}
+.nodiv{
+    cursor: pointer;
 }
 #membership{
     color:#4296cb;
@@ -157,6 +159,77 @@ ul{
     color: white;
     box-shadow: 0 0 20px rgba(85, 196, 224, 0.6);
 }
+#hoverdiv{
+    position: absolute;
+    top:15vh;
+    height: 20vh;
+    width: 100vw;
+    background-color: #33384d;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    z-index: 1;
+}   
+#hoverdiv div{
+    width: 12%;
+    height: 95%;
+    margin: 1rem;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+#hoverdiv div:hover{
+    border: 0.2rem solid wheat;
+    background-color: #04050c75;
+    cursor: pointer;
+}
+#photo{ 
+    height: 75vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right,#3d97ce 0%,#12debb 100%);
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+#text{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+   
+}
+#stext{
+    color: white;
+    font-size: 1.5rem
+}
+#heading{
+    color: white;
+    font-size: 3rem
+}
+#text button{
+ background-color: #212432;
+ color: white;
+ border: none;
+ border-radius: 0.25rem;
+ font-size: 1.3rem;
+ padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+}
+#text button:hover{
+    background: linear-gradient(to left,#404863 0%, #212432 100%);
+    cursor: pointer;
+}
+#image{
+    background-image: url(images/main.png);
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 
   
 @media only screen and (max-width: 884px) {

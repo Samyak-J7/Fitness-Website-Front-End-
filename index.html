@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body onmouseleave="hidedivs();">
 <header>
     <nav>
-        <div id="logo">
+        <div id="logo" onmouseover="hidedivs();">
                 <img id="logo-img" src="images/logo.webp" alt="">
         </div>
-        <div id="tabs">
-           <div><span>WORKOUTS</span></div>
-           <div><span>PROGRAMS</span></div>
-           <div><span>HEALTH LIVING</span></div>
-           <div><span>COMMUNITY</span></div>
-           <div><span>ABOUT</span></div>
-           <div><span>STORE</span></div>
-           <div><span id="membership">MEMBERSHIP</span></div>
+        <div id="tabs" >
+           <div onmouseover="showDiv('d1')"  ><span>WORKOUTS</span></div>
+           <div onmouseover="showDiv('d2')"  ><span >PROGRAMS</span></div>
+           <div onmouseover="showDiv('d3')"  ><span>HEALTH LIVING</span></div>
+           <div onmouseover="showDiv('d4')"  ><span>COMMUNITY</span></div>
+           <div onmouseover="showDiv('d5')"  ><span>ABOUT</span></div>
+           <div onmouseover="hidedivs();"  class="nodiv" ><span >STORE</span></div>
+           <div onmouseover="hidedivs();" class="nodiv"  ><span id="membership">MEMBERSHIP</span></div>
         </div>
         <div id="signin">
             <i id="i" class="fa-solid fa-user"></i>
-            <button class="signbtn" id="log">Login</button>
+            <button class="signbtn" id="log">Sign In</button>
         </div>
         <div id="menulogo"> <i onclick="shownav();" class="fa-solid fa-bars"></i></div>
-       
         <div class="sidebar">
             <div id="login">
                 <div id="closelogo"><i onclick="closebar();" class="fa-solid fa-xmark"></i></div>
@@ -51,7 +50,6 @@
                     <li>
                       <a >Meal Plans</a>
                     </li>
-                    <li><a>Pilot Programs</a></li>
                     <li><a>Routines</a></li>
                   </ul>
                   <ul>
@@ -63,7 +61,7 @@
                   <ul>
                     <li><a class="demi">COMMUNITY</a></li>
                     <li><a>Blog</a></li>
-                    <li><a>What&apos;s New</a></li>
+                    <li><a>What's New</a></li>
                   </ul>
                   <ul>
                     <li><a class="demi">ABOUT</a></li>
@@ -74,7 +72,34 @@
             </div>
          </div>
     </nav>
+    <div id="hoverdiv" onmouseover="showdiv();" onmouseleave="hidedivs();" >
+          <div class="d1"> Workout Videos </div>
+          <div class="d1"> Custom Workouts </div>
+          <div class="d2"> Workout Programs </div>
+          <div class="d2"> Meal Plans </div>
+          <div class="d2"> Routines </div>
+          <div class="d3"> Articles </div>
+          <div class="d3"> Healthy Recipes </div>
+          <div class="d3"> Wellness Videos </div>
+          <div class="d4"> Blog </div>
+          <div class="d4"> What's New </div>
+          <div class="d5"> Tutorials </div>
+          <div class="d5"> Our Team </div>
+    </div>
 </header>
+<div id="main">
+  <div id="photo">
+    <div id="text">
+      <span id="heading">Feel Great.<br>Body and Mind.</span>
+      <span id="stext">Choose from hundreds of workouts, healthy <br>
+         recipes, relaxing meditations, and expert <br>
+          articles, for a whole body and mind <br>
+           approach to feeling great.</span>
+      <button>Join Now</button>
+    </div>
+    <div id="image"></div>
+  </div>
+  
 <footer>
 
 </footer>
