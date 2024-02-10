@@ -22,3 +22,11 @@ function hidedivs() {
 function showdiv() {
     document.querySelector("#hoverdiv").style.display = "flex";
 }
+// window.addEventListener('scroll', function() {
+//     let navbar = document.querySelector('nav');
+//     if (window.scrollY > 0) {
+//       navbar.style.height = '10vh'; // Adjust the height you want to shorten to
+//     } else {
+//       navbar.style.height = '15vh'; // Adjust the original height of the navbar
+//     }
+//   });
